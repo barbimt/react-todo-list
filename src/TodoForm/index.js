@@ -27,24 +27,24 @@ const onSubmit = (event) => {
 return (
         <form className="Form-NewTodo"
         onSubmit={onSubmit}> 
-<label htmlFor="">Escribe tu nuevo To-Do</label>
+<label htmlFor="">New To-do</label>
 <textarea className="text-gray-800"
 value= {newTodoValue}
 onChange={onChange}
-placeholder="Escribe una nueva tarea"
+placeholder="Write a new task"
 />
 <div className="TodoForm-buttonContainer">
     <button className="bg-red-500  hover:bg-red-900 text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
     type="button"
     onClick={onCancel}
     >
-    Cancelar 
+    Cancel 
     </button>
 
     <button className="bg-green-500  hover:bg-green-900 text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded"
     type="submit"
     >
-    Añadir
+    Add
     </button>
 </div>
       </form>
